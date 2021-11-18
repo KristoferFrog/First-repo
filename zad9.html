@@ -1,0 +1,45 @@
+<html>
+<head>
+<div style=font-size:38px;color:green;>
+<script language="JavaScript">
+var D1_gda=prompt("Wybierasz Dzień Początkowy","");
+
+var D2_gda=prompt("Wybierasz Dzień Końcowy","");
+
+var G1_gda=prompt("Godzina Dnia Końcowego","");
+
+var G2_gda=prompt("Godzinna Dnia Końcowego","");
+
+var howmuch;
+var HWsek;
+var HWHoursesek;
+var WspolneValue;
+
+
+ var D1=parseFloat(D1_gda);
+ var D2=parseFloat(D2_gda);
+ var G1=parseFloat(G1_gda);
+ var G2=parseFloat(G2_gda);
+ 
+
+
+ if(D1<D2){
+    howmuch=D2-D1;
+    HWsek=howmuch*86400;
+    HWHoursesek=G2*3600
+    WspolneValue=HWHoursesek+HWsek;
+    document.write("Między "+D1+" Stycznia godziną "+G1+" a "+D2+" Stycznia godzinną "+G2+" jest "+WspolneValue+" sekund <br>");
+}
+ else{
+    howmuch=D1-D2;
+     HWsek=howmuch*86400;
+     HWHoursesek=(24-G1)*3600;
+     WspolneValue=(HWHoursesek)+(HWsek);
+     document.write("Między "+D2+" Stycznia godziną "+G2+" a "+D1+" Stycznia godziną "+G1+" jest "+WspolneValue+" sekund <br>");
+ }
+
+ </script>
+
+</div>
+</head>
+</html>
