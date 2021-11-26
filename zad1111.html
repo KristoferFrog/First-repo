@@ -1,0 +1,25 @@
+<HTML>
+    <head>
+        <script language="JavaScript">
+          function fib()
+{
+            var m_gda=prompt("Podaj 1 wartosc :","")
+            m_gda = parseFloat(m_gda);
+            var m_gda1=prompt("Podaj 2 wartosc","")
+            m_gda1 = parseFloat(m_gda1);
+            var m_gda2=m_gda+m_gda1;
+            m_gda2 = parseFloat(m_gda2);
+            var m_gda3=m_gda1+m_gda2;
+            m_gda3 = parseFloat(m_gda3);
+            var m_gda4=m_gda2+m_gda3;
+            m_gda4 = parseFloat(m_gda4);
+
+            document.write("5 wartosci Funkcji Fibbonaciego wynosza: "+m_gda+", "+m_gda1+", "+m_gda2+" ,"+m_gda3+" ,"+m_gda4+" <br>" );
+}
+
+        </script>
+    <body>
+        <input type="button" name="przycisk10" value="fib" onclick="fib('')">
+    </body>
+    </head>
+    </HTML>
