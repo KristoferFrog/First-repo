@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script type="text/javascript">
+ 
+    
+function czołg(marka,rok,trakcja,wlasciciel,egzemplarze,prędkość,pancerz) 
+{
+this.marka=marka;
+this.rok=rok;
+this.trakcja=trakcja;
+this.wlasciciel=wlasciciel;
+this.egzemplarze=egzemplarze
+this.prędkość=prędkość
+this.pancerz=pancerz
+}
+function kot(rasa,wiek,kolor,imie,waga,kraj) 
+{
+this.rasa=rasa;
+this.wiek=wiek;
+this.kolor=kolor;
+this.imie=imie;
+this.waga=waga
+this.kraj=kraj
+
+}
+lekki = new czołg("7TP", 1935, "gąsienicowa", "UK", "132","37 km/h", "z płyt pancernych na śrubach");
+ciezki = new czołg("PzKpfw VI Tiger", 1942, "gąsienicowa","Niemcy", "1355","38 km/h", "grubość: 25 - 125 mm");
+sredni = new czołg("Leopard 2A5", 1973, "gąsienicowa", "Niemcy", "1435","68 km/h", "z płyt pancernych na śrubach");
+document.write("Marka: "+lekki.marka + " rocznik: "+lekki.rok + " trakcja: "+lekki.trakcja + "wlasciciel: "+lekki.wlasciciel + "ilosc egzemplarzy: "+lekki.egzemplarze+  "predkość: "+lekki.prędkość+ "pancerz: "+lekki.pancerz+"<br>" );
+document.write("Marka: "+ ciezki.marka +" rocznik: "+ ciezki.rok +" trakcja:"+ ciezki.trakcja+ "wlasciciel"+ ciezki.wlasciciel+ "ilosc egzemplarzy"+ ciezki.egzemplarze+ "predkość"+ ciezki.prędkość+ "pancerz"+ ciezki.pancerz+"<br>" );
+document.write("Marka: "+ sredni.marka +" rocznik: "+ sredni.rok +" trakcja:"+ sredni.trakcja+ "wlasciciel"+ sredni.wlasciciel+ "ilosc egzemplarzy"+ sredni.egzemplarze+ "predkość"+ sredni.prędkość+ "pancerz"+ sredni.pancerz+"<br>" );
+ 
+dragon_li = new kot("Dragon Li", 3, "kawowy", "Ziutek", "1039 g","Chiny");
+skoke = new kot("Skoke", 5, "złotawy","Mafizo", "1355 g","Kenia");
+pixie_bob = new kot("Pixie Bob", 1, "czarny", "Szmufler", "800 g","USA");
+document.write("rasa: "+dragon_li.rasa + " wiek: "+dragon_li.wiek + " kolor: "+dragon_li.kolor + "imie: "+dragon_li.imie + "waga: "+dragon_li.waga+  "kraj: "+dragon_li.kraj+ "<br>" );
+document.write("rasa: "+ skoke.rasa +" wiek: "+ skoke.wiek +" kolor:"+ skoke.kolor+ "imie"+ skoke.imie+ "waga"+ skoke.waga+ "kraj"+ skoke.kraj+ "<br>" );
+document.write("rasa: "+ pixie_bob.rasa +" wiek: "+ pixie_bob.wiek +" kolor:"+ pixie_bob.kolor+ "imie"+ pixie_bob.imie+ "waga"+ pixie_bob.waga+ "kraj"+ pixie_bob.kraj+ "<br>" );   
+    </script>
+ 
+    
+</head>
+<body>
+   
+</body>
+ 
+</html>
