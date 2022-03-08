@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>
+zadanie 20
+</title>
+ <script language="JavaScript">
+function pole_gdaniec(a_dane_gda,b_dane_gda,h_dane_gda)
+
+
+
+{
+ a_gda=parseFloat(a_dane_gda);
+ b_gda=parseFloat(b_dane_gda);
+ h_gda=parseFloat(h_dane_gda);
+ var c_gda = Math.sqrt(Math.pow((a_gda-b_gda)/2, 2) + Math.pow(h_gda, 2))
+ wyprowadz_pole_gdaniec=a_gda+b_gda+2*c_gda
+ document.getElementsByName('pole')[0].value=wyprowadz_pole_gda.toFixed(2); /* na dokument */
+ alert("Pole="+wyprowadz_pole_gda.toFixed(2)+" cm^2"); /*do okna Alert */
+ pole.innerHTML="Pole="+wyprowadz_pole_gda.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+}
+function obwod_gdaniec(a_dane_gda,b_dane_gda,h_dane_gda)
+{
+ a_gda=parseFloat(a_dane_gda);
+ b_gda=parseFloat(b_dane_gda);
+ h_gda=parseFloat(h_dane_gda);
+ wyprowadz_obwod_gdaniec=(a_gda+b_gda)/2*h_gda;
+ document.getElementsByName('obw')[0].value=wyprowadz_obwod_gdaniec.toFixed(2);
+ alert("obwód="+wyprowadz_obwod_gdaniec.toFixed(2)+" cm");
+ obw.innerHTML="obwód="+wyprowadz_obwod_gdaniec.toFixed(2)+"cm";
+}
+
+
+
+ </script>
+</head>
+<body>
+Obliczanie P i Ob trapezu równoramiennego
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_gdaniec(this.a_dane_gda.value,this.b_dane_gda.value);
+obwod_gdaniec(this.a_dane_gda.value,this.b_dane_gda.value);false">
+
+Podaj a
+<input size="6" name="a_dane_gda">
+Podaj b
+<input size="6" name="b_dane_gda">
+Podaj h
+<input size="6" name="h_dane_gda">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="pole">
+obwod=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="pole"></tr>
+<tr id="obw"></tr>
+</table>
+</body>
+</html>
