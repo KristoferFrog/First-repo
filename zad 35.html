@@ -1,0 +1,35 @@
+<html>
+<head>
+<script type="text/javascript">
+function wyswietlaDate(){
+ var Today = new Date();
+ var Month = (Today.getMonth()+1);
+ var Day = Today.getDate();
+ var Year = Today.getFullYear();
+ if(Year <= 99) Year += 1900
+ return Day + "-" + Month + "-" + Year;
+
+
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+ document.write("Dzisiaj jest " + wyswietlaDate());
+
+document.write("przeglądarka="+navigator.appName+"<br>");
+
+document.write("wersja="+navigator.appVersion+"<br>");
+
+document.write("Info o przeglądarce="+navigator.userAgent+"<br>");
+
+document.write("Sysstem operacyjny="+navigator.platform+"<br>");
+
+document.write("Tryb przeglądarki="+navigator.onLine+"<br>");
+
+document.write("Przeglądarka wspólpracuje z  javą="+navigator.javaEnabled()+"<br>");
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+    </head>
+    
+    <body>
+        Obiekt location
+        Obiekt ten zawiera informacje o bieżącym adresie URL. Jego właściwości odpowiadają kolejnym<br>
+        członom adresu.<br>
+        Ogólna postać lokalizatora URL to:<br>
+        protocol://host:port/path#fragment?query<br>
+        Właściwości obiektu location<br>
+        protocol →to łańcuch znakowy określający protokół, zgodnie z którym<br>
+        należy nawiązać łączność z podanym serwerem (np. http:, ftp:, file:),<br>
+        host → to łańcuch znakowy określający nazwę serwera z bieżącego adresu, port<br>
+        to łańcuch znakowy odpowiadający portowi, przez który należy połączyć się z serwerem,<br>
+        pathname →to łańcuch znakowy określający ścieżkę dostępu do dokumentu na serwerze,<br>
+        hash → to łańcuch znakowy odpowiadający nazwie zakotwiczenia (przypisanie tu jakiejś wartości spowoduje przewinięcie dokumentu do wskazanego punktu),<br>
+        serach→ to człon lokalizatora URL.<br>
+        Metody obiektu location<br>
+1)Metoda assign<br>
+Wywołanie: location.assign(url)<br>
+Metoda assign wczytuje dokument o adresie wskazanym przez argument url.<br>
+2)Metoda reload<br>
+Wywołanie: location.reload(force)<br>
+Metoda reload wymusza ponowne wczytanie bieżącej strony. Jeśli obecny jest argument force i ma on wartość true, wymusza to ponowne wczytanie zawartości witryny z serwera. W pozostałych przypadkach przeglądarka może wczytać ją z pamięci cache.<br>
+3)Metoda replace<br>
+Wywołanie: location.replace(url)<br>
+Metoda replace zastępuje bieżący dokument przez wczytany spod adresu wskazanego przez argument url.<br>
+Różnica między assign a repleace<br>
+W przeciwieństwie do metody assign, po zastosowaniu replace bieżąca strona nie zostanie zapisana w historii przeglądanych witryn, nie będzie więc można się do niej ponownie odwołać poprzez wciśnięcie przycisku Wstecz bądź też wywołanie history.go(-1).<br>
+Tę metodę można wykorzystać np. w sytuacji, kiedy witryna została przeniesiona pod inny adres, a pod starym ma być umieszczona stoso<br>
+
+
+</ul>
+</body>
+</html>
